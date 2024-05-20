@@ -23,4 +23,4 @@ LoginRegisterImage.propTypes = {
   destination: PropTypes.oneOf(['login', 'register']).isRequired,
 }
 
-export default LoginRegisterImage
+export { LoginRegisterImage }

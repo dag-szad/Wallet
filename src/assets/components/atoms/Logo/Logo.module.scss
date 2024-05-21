@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 100%;
+
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.875rem;
+    }
+  }
+}

@@ -1,36 +1,17 @@
-import nameIcon from './name.svg'
-import emailIcon from './email.svg'
-import passwordIcon from './password.svg'
+import { Icon } from '../Icon/Icon.jsx'
 import styles from './FormInput.module.scss'
 
-const FormInput = ({ name, placeholder, onSubmit }) => {
-  let src
-  switch (name) {
-    case 'name':
-      src = nameIcon
-      break
-    case 'email':
-      src = emailIcon
-      break
-    case 'password':
-      src = passwordIcon
-      break
-    default:
-      src = ''
-      break
-  }
-
+const FormInput = ({ name, placeholder }) => {
   return (
     <div className={styles.formInput}>
-      <label htmlFor={name}>
-        <img src={src} alt={name} className={styles.formInput__icon} />
+      <label htmlFor={name} className={styles.formInput__img}>
+        <Icon name={name} style={styles.formInput__icon} />
       </label>
       <input
         type={name}
         id={name}
         name={name}
         placeholder={placeholder}
-        onSubmit={onSubmit}
         className={styles.formInput__input}
       />
     </div>

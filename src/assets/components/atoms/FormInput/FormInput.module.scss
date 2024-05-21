@@ -5,6 +5,7 @@
   gap: 15px;
 
   border-bottom: 1px solid var(--form-grey);
+  transition: border-color 0.3s ease-in;
 
   width: 280px;
   height: 32px;
@@ -16,8 +17,18 @@
     height: 35px;
   }
 
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 24px;
+    height: 24px;
+  }
+
   &__icon {
-    display: block;
+    fill: var(--form-grey);
+    transition: fill 0.3s ease-in;
   }
 
   &__input {
@@ -28,19 +39,23 @@
 
     border: none;
     outline: none;
+    background: none;
 
     width: 100%;
 
-    transition: color 0.3s ease-in;
-
     &::placeholder {
-      color: var(--form-dark-grey);
+      color: var(--form-grey);
+      opacity: 100%;
     }
+  }
 
-    &:hover,
-    &:active,
-    &:focus {
-      color: var(--form-dark-grey);
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: var(--form-dark-grey);
+
+    & .formInput__icon {
+      fill: var(--form-dark-grey);
     }
   }
 }

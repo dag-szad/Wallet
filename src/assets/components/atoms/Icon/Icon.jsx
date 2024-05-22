@@ -2,7 +2,7 @@ const Icon = ({ name, style }) => {
   let icon = null
 
   switch (name) {
-    case 'name':
+    case 'username':
       icon = (
         <svg
           width="19"
@@ -31,6 +31,7 @@ const Icon = ({ name, style }) => {
       )
       break
     case 'password':
+    case 'password-confirm':
       icon = (
         <svg
           width="17"

@@ -41,14 +41,17 @@ const LoginRegisterForm = ({
 
   const handleUsernameChange = (e) => {
     setUsernameInput(e.target.value)
+    setUsername(e.target.value)
   }
 
   const handleEmailChange = (e) => {
     setEmailInput(e.target.value)
+    setEmail(e.target.value)
   }
 
   const handlePasswordChange = (e) => {
     setPasswordInput(e.target.value)
+    setPassword(e.target.value)
   }
 
   const handlePasswordConfirmChange = (e) => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FormInput } from '../../atoms/FormInput/FormInput.jsx'
 import { BasicButtons } from '../../atoms/BasicButtons/BasicButtons.jsx'
 import styles from './LoginRegisterForm.module.scss'
@@ -58,6 +59,8 @@ const LoginRegisterForm = ({
     setPasswordConfirm(e.target.value)
   }
 
+  const handleLinkButton = () => {}
+
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <FormInput
@@ -101,9 +104,23 @@ const LoginRegisterForm = ({
           colorScheme="green"
         />
         {destination === 'login' ? (
-          <BasicButtons name="Register" size="big" colorScheme="white" />
+          <Link to="/register">
+            <BasicButtons
+              type="button"
+              name="Register"
+              size="big"
+              colorScheme="white"
+            />
+          </Link>
         ) : (
-          <BasicButtons name="Log In" size="big" colorScheme="white" />
+          <Link to="/login">
+            <BasicButtons
+              type="button"
+              name="Log In"
+              size="big"
+              colorScheme="white"
+            />
+          </Link>
         )}
       </div>
     </form>

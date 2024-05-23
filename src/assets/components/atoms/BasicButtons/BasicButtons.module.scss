@@ -50,3 +50,14 @@
     color: var(--button-white);
   }
 }
+
+.blue {
+  background-color: var(--button-blue);
+  color: var(--button-white);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--button-blue-hover);
+  }
+}

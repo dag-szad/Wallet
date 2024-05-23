@@ -1,7 +1,9 @@
 .button {
   border: none;
   border-radius: 20px;
-  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in,
+    border-color 0.3s ease-in;
+  cursor: pointer;
 }
 
 .small {
@@ -10,6 +12,14 @@
   font-weight: 400;
 
   padding: 4px 12px;
+}
+
+.medium {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+
+  padding: 5px 20px;
 }
 
 .big {
@@ -28,12 +38,14 @@
 
 .green {
   background-color: var(--button-green);
+  border: 1px solid var(--button-green);
   color: var(--button-white);
 
   &:hover,
   &:active,
   &:focus {
     background-color: var(--button-green-hover);
+    border-color: var(--button-green-hover);
   }
 }
 
@@ -46,18 +58,19 @@
   &:active,
   &:focus {
     background-color: var(--button-blue);
-    border: none;
     color: var(--button-white);
   }
 }
 
 .blue {
   background-color: var(--button-blue);
+  border: 1px solid var(--button-blue);
   color: var(--button-white);
 
   &:hover,
   &:active,
   &:focus {
     background-color: var(--button-blue-hover);
+    border-color: var(--button-blue-hover);
   }
 }

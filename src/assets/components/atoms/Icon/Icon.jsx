@@ -124,33 +124,6 @@ const Icon = ({ name, style }) => {
         </svg>
       )
       break
-    case 'graph':
-      icon = (
-        <svg
-          width="51"
-          height="51"
-          viewBox="0 0 51 51"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className={style}
-        >
-          <path
-            d="M41.852 41.8724H8.51868V8.53906"
-            stroke="black"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M8.51868 34.5808L25.1853 18.9558L31.4353 25.2058L40.8103 15.8308"
-            stroke="black"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      )
-      break
     case 'clock':
       icon = (
         <svg

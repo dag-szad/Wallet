@@ -1,5 +1,5 @@
 .side {
-  background-color: var(--background-violet);
+  background-color: var(--background-greyish);
 
   position: fixed;
   z-index: 2;
@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 
   transition-property: translateX(0);
   transition-duration: 0.3s;
@@ -29,7 +30,7 @@
 
     width: 20px;
     height: 20px;
-    stroke: var(--text-secondary);
+    stroke: var(--text-dark-main);
 
     cursor: pointer;
   }
@@ -39,7 +40,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
 

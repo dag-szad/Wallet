@@ -3,15 +3,22 @@
   justify-content: space-between;
   align-items: center;
 
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
+  padding: 15px 0;
 
   &__nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    display: none;
 
-    list-style: none;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__link {
@@ -29,7 +36,25 @@
   }
 
   &__buttons {
-    display: flex;
-    gap: 20px;
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &__button {
+    background: none;
+    border: none;
   }
 }

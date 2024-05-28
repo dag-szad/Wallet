@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 
 import { Logo } from '../../../../../components/atoms/Logo/Logo.jsx'
+import { Icon } from '../../../../../components/atoms/Icon/Icon.jsx'
 import { BasicButtons } from '../../../../../components/atoms/BasicButtons/BasicButtons.jsx'
 
 import styles from './HomePageHeader.module.scss'
 
-const HomePageHeader = () => {
+const HomePageHeader = ({ setNavVisible }) => {
   return (
     <div className={styles.header}>
       <Logo />
@@ -45,6 +46,11 @@ const HomePageHeader = () => {
             colorScheme="green"
           />
         </Link>
+      </div>
+      <div className={styles.hamburger}>
+        <button className={styles.hamburger__button} onClick={setNavVisible}>
+          <Icon name="hamburger" style={styles.hamburger__icon} />
+        </button>
       </div>
     </div>
   )

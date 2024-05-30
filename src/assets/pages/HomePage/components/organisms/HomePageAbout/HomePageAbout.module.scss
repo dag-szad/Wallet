@@ -1,0 +1,84 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  max-width: 1500px;
+  margin: 0 auto;
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    color: var(--text-dark-main);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: Poppins, sans-serif;
+    color: var(--text-dark-primary);
+    font-weight: 400;
+    font-size: 1rem;
+
+    margin: 0;
+  }
+
+  &__cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: stretch;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 240px;
+  padding: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &:nth-child(odd) {
+      justify-self: end;
+    }
+
+    &:nth-child(even) {
+      justify-self: start;
+    }
+  }
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    color: var(--text-dark-primary);
+    font-weight: 600;
+    font-size: 1rem;
+
+    margin: 0;
+  }
+
+  &__text {
+    font-family: Poppins, sans-serif;
+    color: var(--text-dark-primary);
+    font-weight: 400;
+    font-size: 0.875rem;
+
+    margin: 0;
+  }
+}

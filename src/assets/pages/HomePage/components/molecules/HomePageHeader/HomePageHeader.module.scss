@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__link {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+
+    color: var(--text-dark-primary);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--text-accent-blue);
+      transition: color 0.3s ease-in;
+    }
+  }
+
+  &__buttons {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+  }
+}

@@ -41,7 +41,7 @@ const ErrorPage = () => {
           <p className={styles.errorPage__text}>
             Who knows what happened here...
           </p>
-          <Link to="./home">
+          <Link to="/">
             <BasicButtons
               type="buton"
               name="Take me back"

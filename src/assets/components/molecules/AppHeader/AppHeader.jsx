@@ -3,14 +3,14 @@ import { ExitButton } from '../../../../../components/atoms/ExitButton/ExitButto
 
 import styles from './AppHeader.module.scss'
 
-const AppHeader = ({ UserName }) => {
+const AppHeader = ({ UserName, logOut }) => {
   return (
     <div className={styles.header}>
       <Logo />
       <div className={styles.header__buttons}>
         <p>{UserName}</p>
         |
-        <ExitButton />
+        <ExitButton logOut={logOut} />
       </div>
     </div>
   )

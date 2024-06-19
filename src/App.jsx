@@ -7,6 +7,7 @@ import { HomePage } from './assets/pages/HomePage/HomePage.jsx'
 import { RegisterPage } from './assets/pages/RegisterPage/RegisterPage.jsx'
 import { LoginPage } from './assets/pages/LoginPage/LoginPage.jsx'
 import { ErrorPage } from './assets/pages/ErrorPage/ErrorPage.jsx'
+import { TestPage } from './assets/pages/TestPage/TestPage.jsx'
 
 import './App.scss'
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/test" element={<TestPage />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </SharedLayout>
